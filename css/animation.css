@@ -1,8 +1,44 @@
 header {
     animation: fadeInDown ease 1.2s;
 }
+.bonjour {
+    animation: entrer1 ease 1.6s;
+}
+.hr {
+    animation: entrer1 ease 1.6s;
+}
+.prst2 {
+    h1 {
+        animation: entrer1 ease 1.9s;
+    }
+    h2 {
+        animation: entrer1 ease 1.9s;
+    }
+    p {
+       animation: entrer1 ease 2.2s; 
+    }
+}
+.foot {
+    animation: entrer1 ease 2.5s;
+}
+.end {
+    animation: entrer1 ease 2.8s;
+}
+.image {
+    animation: entrer2 ease 3.2s ;
+}
 
-
+@keyframes entrer2 {
+    0% {
+        opacity: 0.1;
+        transform: translateX(400px);
+    }
+     100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+    
+}
 @keyframes fadeInDown {
     0% {
         opacity: .1;
@@ -15,13 +51,15 @@ header {
     
 }
 @keyframes entrer1 {
-    0% {
+    100% {
         opacity: 0;
-        transform: translateY(-100px);
+        transform: translateX(00px);
     }
 
-    100% {
-        opacity: 1;
-        transform: translateY(0px);
+    0% {
+        opacity: 0;
+        transform: translateX(0px);
     }
 }
+
+

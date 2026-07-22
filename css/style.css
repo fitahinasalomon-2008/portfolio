@@ -82,10 +82,16 @@ body {
                 font-size: 1rem;
                 cursor: pointer;
                 box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.123),
-                    inset 0 -1px 1px rgba(122, 121, 121, 0.2);
+                    inset 0 -1px 1px rgba(122, 121, 121, 0.644);
 
                 &:active {
                     scale: 0.99;
+                }
+
+                &:hover {
+                    box-shadow: 0 0 10px rgba(69, 134, 233, 0.863),
+                        0 0 30px rgba(37, 100, 235, 0.808),
+                        0 0 30px rgba(29, 78, 216, 0.15);
                 }
             }
         }
@@ -179,6 +185,7 @@ body {
                 display: flex;
                 gap: 30px;
                 margin: 40px 0 0 0;
+
                 .foot1 {
                     display: flex;
                     flex-direction: row;
@@ -205,12 +212,49 @@ body {
                     color: aliceblue;
                     font-size: 1.1rem;
                     line-height: 1.5;
+
                     p {
                         font-size: 1rem;
                     }
 
                     h3 {
                         font-weight: 600;
+                    }
+                }
+            }
+
+            .end {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                gap: 30px;
+                margin: 7% 0 0 0;
+
+                i {
+                    margin: 0 5px;
+                }
+
+                button {
+                    height: 35px;
+                    padding: 0 20px;
+                    border: none;
+                    border-radius: 5px;
+                    outline: none;
+                    background: rgb(15, 12, 177);
+                    color: #F8FAFC;
+                    font-size: 1rem;
+                    cursor: pointer;
+                    box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.123),
+                        inset 0 -1px 1px rgba(122, 121, 121, 0.2);
+
+                    &:active {
+                        scale: 0.99;
+                    }
+
+                    &:hover {
+                        box-shadow: 0 0 12px rgba(69, 135, 233, 0.274),
+                            0 0 15px rgba(0, 0, 0, 0.705),
+                            0 0 19px rgba(8, 8, 8, 0.15);
                     }
                 }
             }
