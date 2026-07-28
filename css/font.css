@@ -1,0 +1,17 @@
+@font-face {
+    font-family: "mono-thin";
+    src: url("/asset/Roboto_Mono/static/RobotoMono-Thin.ttf") ;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "mono-regular";
+    src: url("/asset/Roboto_Mono/static/RobotoMono-Regular.ttf") ;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "mono-bold";
+    src: url("/asset/Roboto_Mono/static/RobotoMono-Bold.ttf") ;
+    font-style: normal;
+}

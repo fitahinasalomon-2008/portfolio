@@ -6,90 +6,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/animation.css">
+    <link rel="stylesheet" href="./css/responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Portfolio</title>
 </head>
 
 <body>
-    <header>
+    <header class="enter">
+        <h1 class="title">
+            Salomon
+        </h1>
+        <label for="menu-toggle" class="menu-label">
+            <i class="fas fa-bars"></i>
+        </label>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
         <nav>
-            <h1 class="nom">
-                <span class="blue">S</span>alomon<span class="blue">.dev</span>
-            </h1>
-            <div>
-                <ul>
-                    <a href="#accueil" class="nav-link">Accueil</a>
-                    <a href="#apropos" class="nav-link">A propos</a>
-                    <a href="#projets" class="nav-link">Projets</a>
-                    <a href="#compétences" class="nav-link">Compétences</a>
-                </ul>
-                <button class="cv">
-                    <i class="fas fa-file-pdf"></i> Mon CV
-                </button>
-            </div>
-
+            <ul>
+                <a href="#accueil" class="nav-link"> Accueil</a>
+                <a href="#apropos" class="nav-link">A propos</a>
+                <a href="#projets" class="nav-link">Projets</a>
+                <a href="#compétences" class="nav-link">Compétences</a>
+            </ul>
+            <button class="btn">
+                <i class="fas fa-envelope"></i> Contact me
+            </button>
         </nav>
     </header>
     <main>
-        <div id="section">
-            <section id="accueil">
-                <div class="container-div">
-                    <div class="presentation">
-                        <div class="prst1">
-                            <p class="bonjour"> Bonjour, je suis </p>
-                            <hr class="hr">
-                        </div>
-                        <div class="prst2">
-                            <h1>Hi, I'm Salomon</h1>
-                            <h2>Frontend <br> Developer</h2>
-                            <p>Je transforme des idées en expérience Web <br>
-                                immersives, alliant design, performance et accessibilité.</p>
-                        </div>
-                        <div class="foot">
-                            <div class="foot1">
-                                <div>
-                                    <i class="fas fa-code"></i>
-                                </div>
-                                <div>
-                                    <h3>Code propre</h3>
-                                    <p>Des solution maintenables <br>
-                                        et bien structurées.</p>
-                                </div>
-                            </div>
-                            <div class="foot2">
-                                <div>
-                                    <i class="fas fa-bolt"></i>
-                                </div>
-                                <div>
-                                    <h3>Performance</h3>
-                                    <p>Des sites rapides, optimisés <br>
-                                        et accessibles.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="end">
-                        <button> <i class="fa-solid fa-folder-open"></i>Voir mes projets</button>
-                        <button> <i class="fa-solid fa-paper-plane"></i>Me contacter</button>
-                        </div>
-
-                    </div>
-                    <div class="image">
-                        <figure>
-                            <img src="/salomonAvatar.png" alt="">
-                        </figure>
-                    </div>
+        <div class="social">
+            <div>
+                <i id="fb" class="fa-brands fa-facebook-f"></i>
+                <i id="whatsapp" class="fa-brands fa-whatsapp"></i>
+                <i id="twitter" class="fa-brands fa-twitter"></i>
+                <i id="tiktok" class="fa-brands fa-tiktok"></i>
+            </div>
+        </div>
+        <section id="accueil" class="section">
+            <div class="container">
+                <div class="card">
+                    <h1 class="title">Hi, I'm Salomon Adam's</h1>
+                    <h2 class="card-title"><span class="typing">Web Developer</span></h2>
+                    <p class="paragraphe">Développeur Frontend passionné par la création d'expériences web fluides,
+                        modernes et interactives. Je transforme vos idées et maquettes en sites web performants,
+                        accessibles et parfaitement adaptés à tous les écrans.</p>
+                </div>
+                <div class="card card-button">
+                    <button class="btn contact"> <i class="fas fa-download"></i> Download my CV</button>
+                    <button class="btn project">Voir mes projet</button>
                 </div>
 
-            </section>
-            <section id="apropos"></section>
-            <section id="compétences"></section>
-            <section id="projets"></section>
-        </div>
-
+            </div>
+            <div class=" container image-round">
+            </div>
+        </section>
+        <section id="#apropos" class="section">
+            <div></div>
+            <div></div>
+        </section>
+        <section id="#projets" class="section">
+            <div></div>
+            <div></div>
+        </section>
     </main>
     <footer>
-
     </footer>
 </body>
 
