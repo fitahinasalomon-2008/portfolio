@@ -29,7 +29,9 @@ body {
 }
 
 section {
-    height: 100vh;
+    min-height: 100vh;
+    height: auto;
+    padding: 5rem 0 4rem;
 }
 
 header {
@@ -181,9 +183,9 @@ main {
         gap: 2rem;
 
         .image-round {
-            width: 350px;
-            height: 350px;
-            margin-right: 150px;
+            width: clamp(220px, 28vw, 350px);
+            height: clamp(220px, 28vw, 350px);
+            margin-right: clamp(1rem, 8vw, 9rem);
             object-fit: cover;
             background-size: cover;
             border-radius: 50%;
@@ -330,13 +332,13 @@ main {
             line-height: 1.5;
 
             h3 {
-                font-size: 1.05rem;
+                font-size: clamp(0.95rem, 1.5vw, 1.05rem);
                 font-weight: 450;
                 color: var(--tertiary-color);
             }
 
             h1 {
-                font-size: 2.8rem;
+                font-size: clamp(2rem, 4vw, 2.8rem);
                 color: var(--text-color);
             }
         }
@@ -344,51 +346,50 @@ main {
         .box-project2 {
             display: flex;
             justify-content: space-between;
-            gap: 5%;
+            gap: clamp(1rem, 2vw, 2rem);
+            flex-wrap: wrap;
+            margin-bottom: clamp(1rem, 2vw, 2rem);
 
             .card-pro {
                 background: rgba(255, 255, 255, 0.034);
                 border: solid 1px #243330;
-                width: auto;
-                padding: 10px;
+                width: clamp(260px, 30%, 31%);
+                padding: clamp(0.6rem, 1.2vw, 1rem);
                 border-radius: 10px;
+                box-sizing: border-box;
 
                 .figure {
-                    height: 200px;
+                    height: clamp(150px, 22vw, 220px);
                     border-radius: 10px;
 
                     img {
                         height: 100%;
                         width: 100%;
                         border-radius: 10px;
+                        object-fit: cover;
                     }
                 }
 
                 .description {
                     display: flex;
                     flex-direction: column;
-                    gap: 5px;
+                    gap: clamp(0.4rem, 1vw, 0.8rem);
 
                     .btn-p {
                         width: 100%;
                         height: auto;
-                        margin: 10px 0;
+                        margin: clamp(0.5rem, 1vw, 1rem) 0;
                         display: flex;
                         justify-content: center;
 
                         button {
-                            font-size: 1.1rem;
+                            font-size: clamp(0.9rem, 1.6vw, 1.05rem);
                             font-weight: 400;
-                            padding: 10px 40px;
+                            padding: clamp(0.5rem, 1vw, 0.75rem) clamp(1rem, 2vw, 2rem);
                             border-radius: 30px;
                             border: none;
                             background: var(--tertiary-color);
                             cursor: pointer;
-
-                            &:active {
-                                scale: 0.97;
-                                transition: 0.3s;
-                            }
                         }
                     }
 
@@ -398,21 +399,22 @@ main {
                         background: none;
                         border: solid 1px #42847570;
                         color: var(--tertiary-color);
-                        margin-top: 20px;
-                        padding: 3px;
-                        width: 50%;
+                        margin-top: clamp(0.75rem, 1.5vw, 1.25rem);
+                        padding: clamp(0.25rem, 0.6vw, 0.4rem);
+                        width: clamp(40%, 55%, 50%);
                         border-radius: 20px;
-                        font-size: 1rem;
+                        font-size: clamp(0.9rem, 1.2vw, 1rem);
                     }
 
                     h2 {
-                        font-size: 1.2rem;
+                        font-size: clamp(1rem, 2.2vw, 1.2rem);
                         font-weight: 600;
                         color: var(--text-color);
                     }
 
                     p {
                         color: var(--muted);
+                        font-size: clamp(0.9rem, 1.2vw, 1rem);
                     }
                 }
             }
@@ -429,13 +431,13 @@ main {
                 line-height: 1.5;
 
                 h3 {
-                    font-size: 1.05rem;
+                    font-size: clamp(0.95rem, 1.5vw, 1.05rem);
                     font-weight: 500;
                     color: var(--tertiary-color);
                 }
 
                 h1 {
-                    font-size: 2.8rem;
+                    font-size: clamp(2rem, 4vw, 2.8rem);
                     color: var(--text-color);
                 }
             }
@@ -445,11 +447,13 @@ main {
 
                 .cont-comp {
                     display: flex;
-                    gap: 30px;
+                    flex-wrap: wrap;
+                    gap: clamp(1rem, 2vw, 2rem);
                     justify-content: space-between;
 
                     div {
-                        width: 30%;
+                        width: clamp(220px, 30%, 32%);
+                        min-width: 220px;
                         line-height: 1.8;
 
                         div {
@@ -508,19 +512,23 @@ main {
 
                 .skill-2-2 {
                     display: flex;
+                    flex-wrap: wrap;
+                    gap: clamp(1rem, 2vw, 1.5rem);
                     justify-content: space-between;
 
                     .cont-ser {
-                        width: 350px;
+                        width: clamp(260px, 32%, 350px);
+                        max-width: 100%;
                         height: auto;
 
                         .box-co {
                             width: 90%;
+                            max-width: 100%;
                             height: 100%;
                             border: solid 1px rgba(255, 255, 255, 0.12);
                             border-radius: 20px;
                             background: rgba(255, 255, 255, 0.034);
-                            padding: 05px 20px;
+                            padding: clamp(0.5rem, 1vw, 0.8rem) 1.25rem;
                         }
 
                         div {
@@ -530,22 +538,22 @@ main {
                                 display: flex;
                                 align-items: center;
                                 justify-content: center;
-                                padding: 0.45rem 0.8rem;
+                                padding: clamp(0.35rem, 0.8vw, 0.45rem) clamp(0.75rem, 1.4vw, 1rem);
                                 border-radius: 50px;
-                                font-size: 0.75rem;
+                                font-size: clamp(0.75rem, 1vw, 0.85rem);
                                 font-weight: 700;
                                 letter-spacing: 0.08em;
                                 text-transform: uppercase;
                                 background: rgba(66, 201, 159, 0.14);
                                 color: var(--tertiary-color);
-                                height: 50%;
-                                width: 60%;
+                                height: auto;
+                                width: auto;
                             }
                         }
 
 
                         .stitre {
-                            font-size: 1.3rem;
+                            font-size: clamp(1.1rem, 2.2vw, 1.3rem);
                             font-weight: 550;
                             color: var(--text-color);
                         }
@@ -565,38 +573,43 @@ main {
 
 .container-contact {
     width: 90%;
-    height: 90%;
+    max-width: 1100px;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 40px;
-    gap: 35px;
+    margin: 40px auto;
+    gap: clamp(1.25rem, 2vw, 2rem);
+    padding: clamp(1rem, 2vw, 1.5rem);
 
     .cont-h {
         h3 {
-            font-size: 1rem;
+            font-size: clamp(0.95rem, 1.5vw, 1rem);
             color: var(--tertiary-color);
             font-weight: 500;
         }
 
         h1 {
-            font-size: 2.5rem;
+            font-size: clamp(2rem, 4vw, 2.5rem);
             color: var(--text-color);
         }
     }
 
     .cont-card {
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-evenly;
         width: 100%;
+        gap: clamp(1rem, 2vw, 2rem);
 
         .cont-card1 {
             display: flex;
             flex-direction: column;
-            gap: 25px;
+            gap: clamp(1rem, 2vw, 1.5rem);
             background: rgba(255, 255, 255, 0.034);
-            width: 550px;
-            padding: 40px 20px;
+            width: clamp(320px, 45%, 550px);
+            min-width: 280px;
+            padding: clamp(1rem, 2vw, 2rem);
             border: solid 1px #243330;
             border-radius: 20px;
             color: var(--muted);
@@ -608,12 +621,12 @@ main {
                     justify-content: space-between;
 
                     h3 {
-                        font-size: 1.04rem;
+                        font-size: clamp(1rem, 1.6vw, 1.04rem);
                         font-weight: bold;
                     }
 
                     border-bottom: solid 1px #243330;
-                    padding: 10px 0;
+                    padding: clamp(0.75rem, 1.5vw, 1rem) 0;
                 }
             }
 
@@ -623,10 +636,10 @@ main {
 
                 button {
                     border: none;
-                    padding: 10px 40px;
+                    padding: clamp(0.75rem, 1.5vw, 1rem) clamp(1.25rem, 2vw, 2rem);
                     border-radius: 30px;
                     background: var(--tertiary-color);
-                    font-size: 1.05rem;
+                    font-size: clamp(0.95rem, 1.5vw, 1.05rem);
                     color: var(--primary-color);
                     cursor: pointer;
                     box-shadow: 0 0 10px #81f3d841;
@@ -641,14 +654,19 @@ main {
         }
 
         .cont-card2 {
+            width: clamp(320px, 45%, 550px);
+            min-width: 280px;
+            display: flex;
+            justify-content: center;
+
             .form-card {
                 display: flex;
                 flex-direction: column;
-                gap: 15px;
-                width: 500px;
-                padding: 30px 20px;
+                gap: clamp(1rem, 2vw, 1.5rem);
+                width: 100%;
+                padding: clamp(1rem, 2vw, 1.5rem);
                 background: rgba(255, 255, 255, 0.034);
-                border: solid1px #243330;
+                border: solid 1px #243330;
                 border-radius: 20px;
 
                 .input-group {
@@ -658,12 +676,12 @@ main {
 
                     label {
                         color: var(--text-color);
-                        font-size: 1rem;
+                        font-size: clamp(0.95rem, 1.2vw, 1rem);
                     }
 
                     input {
-                        height: 45px;
-                        padding: 0 10px;
+                        height: clamp(42px, 4vw, 48px);
+                        padding: 0 clamp(0.75rem, 1.2vw, 1rem);
                         border-radius: 15px;
                         border: solid 1px #243330;
                         background: rgba(255, 255, 255, 0.034);
@@ -672,8 +690,8 @@ main {
                     }
 
                     #message {
-                        height: 45px;
-                        padding: 0 10px;
+                        height: clamp(90px, 10vw, 120px);
+                        padding: clamp(0.75rem, 1.2vw, 1rem);
                         border-radius: 15px;
                         border: solid 1px #243330;
                         background: rgba(255, 255, 255, 0.034);
@@ -684,10 +702,10 @@ main {
 
                 button {
                     border: none;
-                    padding: 10px 40px;
+                    padding: clamp(0.75rem, 1.5vw, 1rem) clamp(1.25rem, 2vw, 2rem);
                     border-radius: 30px;
                     background: var(--tertiary-color);
-                    font-size: 1.05rem;
+                    font-size: clamp(0.95rem, 1.5vw, 1.05rem);
                     color: var(--primary-color);
                     cursor: pointer;
                     box-shadow: 0 0 10px #81f3d841;
@@ -707,14 +725,30 @@ main {
 footer {
     .ft {
         display: flex;
+        flex-wrap: wrap;
         align-items: center;
-        justify-content:space-between ;
+        justify-content: space-between;
         width: 100%;
-        height: 100%;
+        height: auto;
         color: var(--muted);
-        padding: 50px;
+        padding: clamp(1.5rem, 2vw, 3rem);
+        gap: clamp(1rem, 2vw, 2rem);
         border-top: solid 1px #243330;
         box-shadow: inset 0 0 3px #243330;
 
+        > div {
+            flex: 1 1 clamp(180px, 28%, 300px);
+            min-width: clamp(180px, 25%, 220px);
+        }
+
+        h3 {
+            font-size: clamp(1rem, 1.8vw, 1.2rem);
+            margin-bottom: 0.5rem;
+        }
+
+        p {
+            font-size: clamp(0.9rem, 1.2vw, 1rem);
+            line-height: 1.6;
+        }
     }
 }

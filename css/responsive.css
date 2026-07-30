@@ -1,4 +1,4 @@
-/* header */
+﻿/* header */
 .menu-label {
     display: none;
     font-size: 1.5rem;
@@ -76,6 +76,106 @@
     }
 }
 
+@media (max-width: 900px) {
+    #compétences .skill_1_1 h1 {
+        font-size: clamp(1.6rem, 3vw, 2.8rem);
+    }
+
+    #compétences .skill_1_1 h3 {
+        font-size: clamp(0.85rem, 1.3vw, 1.05rem);
+    }
+
+    #compétences .cont-comp > div > div h2 {
+        font-size: clamp(0.85rem, 1.1vw, 1rem);
+    }
+
+    #compétences .cont-comp > div > div h3 {
+        font-size: clamp(0.8rem, 1vw, 0.95rem);
+    }
+
+    #compétences .skill-2-2 .stitre {
+        font-size: clamp(0.95rem, 1.8vw, 1.3rem);
+    }
+
+    #compétences .skill-2-2 .box-co p {
+        font-size: clamp(0.8rem, 1vw, 0.9rem);
+    }
+
+    #compétences .skill-2 .skill_2_1 h3 {
+        font-size: clamp(0.85rem, 1.3vw, 1.05rem);
+    }
+}
+
+@media (max-width: 450px) {
+    #projets .box-project2,
+    #compétences .cont-comp,
+    #compétences .skill-2-2 {
+        flex-direction: column;
+        align-items: center;
+        gap: clamp(0.75rem, 4vw, 1rem);
+    }
+
+    #projets .card-pro {
+        flex: 1 1 clamp(280px, 90vw, 90%);
+        width: clamp(280px, 90vw, 90%);
+        max-width: 90%;
+        min-width: 0;
+        margin-inline: 0;
+        padding: clamp(0.75rem, 2vw, 1rem);
+    }
+
+    #projets .card-pro .figure {
+        height: clamp(130px, 28vw, 170px);
+    }
+
+    #projets .card-pro .description h3 {
+        width: auto;
+    }
+
+    #compétences .cont-comp > div,
+    #compétences .skill-2 .cont-ser {
+        flex: 1 1 clamp(260px, 90vw, 90%);
+        width: clamp(260px, 90vw, 90%);
+        max-width: 90%;
+        min-width: 0;
+        margin-inline: 0;
+        padding: clamp(0.75rem, 2vw, 1rem);
+    }
+
+    #compétences .skill_1_1 h1 {
+        font-size: clamp(1.4rem, 2.5vw, 2.8rem);
+    }
+
+    #compétences .skill_1_1 h3 {
+        font-size: clamp(0.75rem, 1rem, 1.05rem);
+    }
+
+    #compétences .cont-comp > div > div h2 {
+        font-size: clamp(0.75rem, 0.9vw, 1rem);
+    }
+
+    #compétences .cont-comp > div > div h3 {
+        font-size: clamp(0.7rem, 0.8vw, 0.95rem);
+    }
+
+    #compétences .skill-2-2 .stitre {
+        font-size: clamp(0.85rem, 1.3vw, 1.3rem);
+    }
+
+    #compétences .skill-2-2 .box-co p {
+        font-size: clamp(0.7rem, 0.85vw, 0.9rem);
+    }
+
+    #compétences .skill-2 .skill_2_1 h3 {
+        font-size: clamp(0.75rem, 1rem, 1.05rem);
+    }
+
+    .image-round {
+        width: clamp(220px, 70vw, 320px);
+        height: clamp(220px, 70vw, 320px);
+    }
+}
+
 @media (max-width: 375px) {
     .container {
 
@@ -90,6 +190,110 @@
             }
         }
 
+    }
+
+    #projets .box-project2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: clamp(0.75rem, 4vw, 1rem);
+    }
+
+    #projets .card-pro {
+        width: clamp(260px, 90vw, 90%);
+        max-width: 90%;
+        min-width: 0;
+        margin-inline: 0;
+        padding: clamp(0.6rem, 2vw, 0.8rem);
+    }
+
+    #projets .card-pro .description h3 {
+        width: auto;
+    }
+
+    #projets .card-pro .figure {
+        width: 100%;
+    }
+
+    #compétences .skill_1_1 h1 {
+        font-size: clamp(1.2rem, 2vw, 2.8rem);
+    }
+
+    #compétences .skill_1_1 h3 {
+        font-size: clamp(0.7rem, 0.9rem, 1.05rem);
+    }
+
+    #compétences .cont-comp > div > div h2 {
+        font-size: clamp(0.7rem, 0.8rem, 1rem);
+    }
+
+    #compétences .cont-comp > div > div h3 {
+        font-size: clamp(0.65rem, 0.7rem, 0.95rem);
+    }
+
+    #compétences .skill-2-2 .stitre {
+        font-size: clamp(0.8rem, 1rem, 1.3rem);
+    }
+
+    #compétences .skill-2-2 .box-co p {
+        font-size: clamp(0.65rem, 0.75rem, 0.9rem);
+    }
+
+    #compétences .skill-2 .skill_2_1 h3 {
+        font-size: clamp(0.7rem, 0.9rem, 1.05rem);
+    }
+}
+
+@media screen and (max-width: 320px) {
+    #projets .box-project2,
+    .container-contact .cont-card {
+        gap: clamp(0.75rem, 4vw, 1rem);
+    }
+
+    #projets .card-pro,
+    .container-contact .cont-card1,
+    .container-contact .cont-card2 {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+    }
+
+    #projets .card-pro {
+        padding: clamp(0.6rem, 2vw, 0.8rem);
+    }
+
+    .container-contact .cont-card1,
+    .container-contact .cont-card2 {
+        padding: clamp(0.75rem, 2vw, 1rem);
+    }
+
+    #compétences .skill_1_1 h1 {
+        font-size: clamp(1rem, 1.8vw, 2.8rem);
+    }
+
+    #compétences .skill_1_1 h3 {
+        font-size: 0.75rem;
+    }
+
+    #compétences .cont-comp > div > div h2 {
+        font-size: 0.7rem;
+    }
+
+    #compétences .cont-comp > div > div h3 {
+        font-size: 0.65rem;
+    }
+
+    #compétences .skill-2-2 .stitre {
+        font-size: 0.8rem;
+    }
+
+    #compétences .skill-2-2 .box-co p {
+        font-size: 0.65rem;
+    }
+
+    #compétences .skill-2 .skill_2_1 h3 {
+        font-size: 0.75rem;
     }
 }
 
@@ -107,7 +311,186 @@
 
     main {
         .image-round {
-            width: 500px;
+            width: clamp(220px, 60vw, 320px);
+            margin: 0 auto;
         }
+    }
+
+    #projets .box-project2 {
+        justify-content: center;
+        gap: clamp(1rem, 4vw, 1.5rem);
+    }
+
+    #projets .card-pro {
+        width: 100%;
+        max-width: 520px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    #projets .box-project2 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: clamp(1rem, 2vw, 2rem);
+    }
+
+    #projets .card-pro {
+        width: clamp(260px, 42vw, 100%);
+        max-width: 420px;
+        margin-inline: auto;
+    }
+
+    #projets .card-pro .figure {
+        height: clamp(160px, 24vw, 220px);
+    }
+
+    #projets .card-pro .description h2 {
+        font-size: clamp(1rem, 2.5vw, 1.2rem);
+    }
+
+    #projets .card-pro .description h3 {
+        font-size: clamp(0.9rem, 1.4vw, 1rem);
+    }
+
+    #projets .card-pro .description p {
+        font-size: clamp(0.9rem, 1.2vw, 1rem);
+    }
+
+    #projets .card-pro .description .btn-p button {
+        font-size: clamp(0.85rem, 1.4vw, 1rem);
+        padding: clamp(0.5rem, 1vw, 0.8rem) clamp(1rem, 2vw, 1.4rem);
+    }
+}
+
+@media screen and (max-width: 1130px) {
+
+    #apropos #container-Apropos {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: center;
+        gap: clamp(1rem, 2vw, 2rem);
+        padding: clamp(0.5rem, 1.2vw, 1rem);
+    }
+
+    #apropos .Apropos1 {
+        order: 1;
+        width: clamp(320px, 60%, 720px);
+        padding-right: clamp(0.5rem, 1.5vw, 1.5rem);
+        box-sizing: border-box;
+    }
+
+    #apropos .Apropos2 {
+        order: 2;
+        width: clamp(260px, 35%, 400px);
+        margin-top: 0;
+    }
+
+    #apropos .Apropos1 h1 {
+        font-size: clamp(1.6rem, 3vw, 2.2rem);
+    }
+
+    #apropos .Apropos1 .para,
+    #apropos .Apropos2 .box,
+    #apropos .Apropos1 p {
+        font-size: clamp(0.95rem, 1.2vw, 1rem);
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .container-contact .cont-card {
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: clamp(1rem, 2vw, 1.75rem);
+    }
+
+    .container-contact .cont-card1,
+    .container-contact .cont-card2 {
+        width: 100%;
+        max-width: 680px;
+    }
+
+    .container-contact .cont-card1 {
+        padding: clamp(1rem, 2vw, 1.75rem);
+    }
+
+    .container-contact .cont-card2 {
+        width: 100%;
+        max-width: 680px;
+    }
+
+    .container-contact .cont-card2 .form-card {
+        width: 100%;
+        padding: clamp(1rem, 2vw, 1.75rem);
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .container-contact .cont-card {
+        flex-direction: column;
+        align-items: center;
+        gap: clamp(1rem, 2vw, 1.5rem);
+    }
+
+    .container-contact .cont-card1,
+    .container-contact .cont-card2 {
+        width: 100%;
+        max-width: 600px;
+    }
+
+    .container-contact .cont-card1 {
+        padding: clamp(1rem, 2vw, 1.75rem);
+    }
+
+    .container-contact .cont-card2 .form-card {
+        width: 100%;
+        padding: clamp(1rem, 2vw, 1.75rem);
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    footer .ft {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: clamp(1rem, 2vw, 2rem);
+    }
+
+    footer .ft > div {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+    }
+
+    footer .ft {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    footer .ft {
+        flex-direction: column;
+        align-items: stretch;
+        text-align: center;
+        gap: clamp(0.75rem, 2vw, 1rem);
+        padding: clamp(1rem, 2vw, 1.25rem);
+    }
+
+    footer .ft > div {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+    }
+
+    footer .ft h3 {
+        font-size: clamp(1rem, 2vw, 1.1rem);
+    }
+
+    footer .ft p {
+        font-size: clamp(0.85rem, 1.5vw, 0.95rem);
+        line-height: 1.5;
     }
 }
