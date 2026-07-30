@@ -29,9 +29,12 @@
                 <a href="#compétences" class="nav-link">Compétences</a>
                 <a href="#contact" class="nav-link">Contact</a>
             </ul>
-            <button class="btn">
-                <i class="fas fa-envelope"></i> Contact me
-            </button>
+            <a href="#contact">
+                <button class="btn">
+                    <i class="fas fa-envelope"></i> Contact me
+                </button>
+            </a>
+
         </nav>
     </header>
     <main>
@@ -39,7 +42,8 @@
         <div class="social">
             <div>
                 <a href=""><i id="fb" class="fa-brands fa-facebook-f"></i></a>
-                <a href=""><i id="whatsapp" class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://wa.me/261385883933" target="_blank" rel="noopener noreferrer"><i id="whatsapp"
+                        class="fa-brands fa-whatsapp"></i></a>
                 <a href=""> <i id="twitter" class="fa-brands fa-twitter"></i></a>
                 <a href=""> <i id="tiktok" class="fa-brands fa-tiktok"></i></a>
             </div>
@@ -56,7 +60,8 @@
                 </div>
                 <div class="card card-button">
                     <button class="btn contact"> <i class="fas fa-download"></i> Download my CV</button>
-                    <button class="btn project">Voir mes projet</button>
+                    <a href="#projets"><button class="btn project">Voir mes projet</button></a>
+
                 </div>
 
             </div>
@@ -117,13 +122,68 @@
                 </div>
             </div>
         </section>
-        <section id="projets" class="mr"></section>
+        <section id="projets" class="mr">
+            <div class="container-projets">
+                <div class="box-project1">
+                    <h3>TRAVAUX RÉCENTS</h3>
+                    <h1>Projets sélectionnés</h1>
+                </div>
+                <div class="box-project2">
+                    <div class="card-pro">
+                        <div class="figure">
+                            <img src="./asset/image-1.jfif" alt="image">
+                        </div>
+                        <div class="description">
+                            <h3>VITRINE</h3>
+                            <h2>Site corporate</h2>
+                            <p>Refonte visuelle pour une entreprise locale, avec sections claires et parcours prospect.
+                            </p>
+                            </p>
+                            <div class="btn-p">
+                                <button>Voir</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-pro">
+                        <div class="figure">
+                            <img src="./asset/image-2.webp" alt="image">
+                        </div>
+                        <div class="description">
+                            <h3>APPICATION</h3>
+                            <h2>Dashboard</h2>
+                            <p>Interface de gestion avec tableaux de bord, filtres et accès rapide aux données et plus.
+                            </p>
+                            <div class="btn-p">
+                                <button>Voir</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-pro">
+                        <div class="figure">
+                            <img src="./asset/image-3.webp" alt="image">
+                        </div>
+                        <div class="description">
+                            <h3>PORTFOLIO</h3>
+                            <h2>Site personnel</h2>
+                            <p>Mise en place d'un portfolio professionnel pour valoriser les réalisations et
+                                compétences.
+                            </p>
+                            </p>
+                            <div class="btn-p">
+                                <button>Voir</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
         <section id="compétences" class="mr">
             <div class="skill">
                 <div class="skill_1">
                     <div class="skill_1_1">
                         <h3>COMPÉTENCES CLÉS</h3>
-                        <h1>Techniques</h1>
+                        <h1>Techniques & Service</h1>
                     </div>
                     <div class="skill_1_2">
                         <div class="cont-comp">
@@ -146,19 +206,18 @@
                             <div>
                                 <div>
                                     <h2><i class="fa-brands fa-mobile-alt"></i> Responsive</h2>
-                                    <h3>90%</h3>
+                                    <h3>80%</h3>
                                 </div>
 
-                                <progress max="100" value="90"></progress>
+                                <progress max="100" value="80"></progress>
                             </div>
                         </div>
                     </div>
 
 
                     <div class="skill-2">
-                        <div id="skill_2_1 " class="skill_1_1 ">
+                        <div class="skill_1_1 skill_2_1">
                             <h3>SE QUE JE PROPOSE</h3>
-                            <h1>Service</h1>
                         </div>
                         <div class="skill-2-2">
                             <div class="cont-ser">
@@ -269,6 +328,21 @@
 
     </main>
     <footer>
+        <div class="ft">
+            <div>
+                <h3>Salomon Adam's</h3>
+                <p>Développeur frontend spécialisé en sites web modernes et responsive.</p>
+            </div>
+            <div>
+                <h3>Contact</h3>
+                <p>Email: salomon@example.com <br>
+                    Téléphone: +261 34 12 345 67</p>
+            </div>
+            <div>
+                <p>© 2026 Salomon Adam's • </p>
+            </div>
+        </div>
+
     </footer>
 </body>
 
